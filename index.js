@@ -27,9 +27,9 @@ app.use(morgan("common"));
 app.use(cookieParser());
 let origin = 'https://social-media-client-gamma.vercel.app/';
 console.log('here env', process.env.NODE_ENV);
-if(process.env.NODE_ENV === 'production') {
-    origin = process.env.CLIENT_ORIGIN;
-}
+//if(process.env.NODE_ENV === 'production') {
+//    origin = process.env.CLIENT_ORIGIN;
+//}
 app.use(
     cors({
         credentials: true,
